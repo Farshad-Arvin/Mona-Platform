@@ -1,4 +1,5 @@
 // Basic test of Mona robot including proximity sensors and open-loop motion control
+
 // pin config for basic platform test
 // Motors
 int Motor_right_PWM = 10;  //   0 (min speed) - 255 (max speed) 
@@ -89,17 +90,17 @@ void Obstacle_avoidance(){
   if (IR_front<IR_threshold){
       digitalWrite(LED2,HIGH);
       reverse(300);
-      right();
+      right(500);
       digitalWrite(LED2,LOW);
   }
   if (IR_right<IR_threshold || IR_right_front<IR_threshold ){
       digitalWrite(LED2,HIGH);
-      right();
+      right(500);
       digitalWrite(LED2,LOW);
   } else {
       if (IR_left<IR_threshold || IR_left_front<IR_threshold ){
           digitalWrite(LED2,HIGH);
-          left();
+          left(500);
           digitalWrite(LED2,LOW);
       } else forward();
   }  
