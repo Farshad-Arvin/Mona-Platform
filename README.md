@@ -2,7 +2,7 @@
 Mona robot's basic functions and test code in Arduino
 
 
-To setup your Arduino IDE (1.8.3), to connect and program Mona, please follow the setting:
+To setup your Arduino IDE (1.8.3 or higher download from: https://www.arduino.cc/en/Main/Software), to connect and program Mona, please follow the setting:
 - Boards: "Arduino Pro or Pro Mini
 - Processor: "ATmega328 (3.3V, 8MHz)
 - Programmer: ArduinoISP.org
