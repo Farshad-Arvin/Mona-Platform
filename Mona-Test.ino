@@ -1,4 +1,4 @@
-
+// Basic test of Mona robot including proximity sensors and open-loop motion control
 // pin config for basic platform test
 // Motors
 int Motor_right_PWM = 10;  //   0 (min speed) - 255 (max speed) 
