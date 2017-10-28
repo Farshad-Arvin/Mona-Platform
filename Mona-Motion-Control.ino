@@ -19,7 +19,7 @@ const byte Right_interruptPin = 3;
 
 int Left_forward_speed=111;
 int Right_forward_speed=111;
-float slope=0.1;
+float slope = 0.1;
 
 
 void forward(){
@@ -94,8 +94,8 @@ void Timer_overflow() {   // every 400 ms is called
   Serial.println(Right_counter);
 
   // a basic proportional control (disable these two lines for Open-loop control)
-  Right_forward_speed +=  0.1* Right_compensatory;
-  Left_forward_speed += 0.1*  Left_compensatory  ;
+  Right_forward_speed +=  slope * Right_compensatory;
+  Left_forward_speed  +=  slope *  Left_compensatory;
 
   forward();  // update PWM set-point 
 
